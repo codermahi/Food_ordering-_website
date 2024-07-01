@@ -1,0 +1,308 @@
+/* Reset css */
+* {
+    /* margin: 0px;
+    padding: 0px; */
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 50px;
+
+
+}
+
+/* Navbar logo */
+#logo {
+    /* margin: 2px 5px; */
+
+
+
+}
+
+/* Navbar logo img */
+#logo img {
+    width: 75px;
+    height: 80px;
+    margin: 1px 2px;
+    border-radius: 50%;
+
+
+}
+
+/* Navigation Bar */
+#navbar::before {
+    content: "";
+    background: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    width: 100%;
+
+
+
+
+}
+
+#navbar ul {
+    display: flex;
+
+
+
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: "Anta", sans-serif;
+
+}
+
+#navbar ul li a {
+    /* display: block; */
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+
+
+
+
+
+}
+
+a:hover {
+    color: red;
+    background:tomato;
+}
+
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    padding: 100px 40px;
+
+
+}
+
+#home::before {
+    content: "";
+    background: url("../logo.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .75;
+
+
+}
+
+#home h2 {
+    color: black;
+    font-size: 1.5rem;
+    padding:  50px 0 0 0;
+    font-family: "Anta", sans-serif;
+
+}
+
+#home p {
+    color: black;
+    font-size: 1rem;
+    padding:  50px 0 0 0;
+    font-family: "Anta", sans-serif;
+}
+
+/* services section */
+
+#services {
+    margin: 20px;
+    display: flex;
+    padding: 0%;
+
+
+
+
+}
+
+.box {
+    background: burlywood;
+    display: block;
+    border: 2px solid red;
+    margin: 5px 5px 10px 5px;
+    border-radius: 30px;
+}
+
+.box img {
+    display: block;
+    /* border: 2px solid red;  */
+    height: 80px;
+    width: 120px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 40px;
+    position: relative;
+
+
+}
+
+/* client section */
+#clients-section {
+    height: 250px;
+
+}
+
+#clients-section::before {
+    content: "";
+    position: absolute;
+    background: url('../client.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 60%;
+     z-index: -1;
+     opacity: .8;
+
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.client-item img {
+    border-radius: 40%;
+    height: 150px;
+    padding: 10px;
+
+}
+/* contact section */
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+     z-index: -1;
+     opacity: .8;
+}
+#contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 36px;
+
+}
+#contact-box textarea{
+    width: 172px;
+    height: 50%;
+    border-radius: 10px;
+
+    padding: .1rem;
+}
+#contact-box form{
+    border: 2px red;
+    width:200px ;
+    padding: 20px;
+    margin: 20px;
+}
+#contact-box form label{
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+#contact-box form ::placeholder{
+
+    font-size: 15px;
+
+}
+#contact-box form input{
+    border-radius: 50px;
+}
+
+
+   
+
+/* footer */
+footer{
+    position: relative;
+     background: #000;
+     color: aliceblue;
+     width: 110%;
+     height: 50px;
+}
+
+
+/* utility classes */
+.h-primary {
+    font-size: 2.5rem;
+    padding: 55px 0 0 0;
+    margin: 50px 0 0 0;
+}
+
+.h-secondary {
+    display: block;
+    font-size: 2rem;
+    padding: 13px;
+    margin: auto;
+
+
+}
+
+.btn {
+
+    display: block;
+    background: red;
+    color: black;
+    font-family: "Anta", sans-serif;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: sticky;
+
+
+}
+
+#btn:hover {
+    background-color: antiquewhite;
+}
+
+/* Utility class */
+.center {
+    text-align: center;
+}
+
+.box:hover {
+    color: orangered;
+    background-color: yellow;
+    box-shadow: 10px 12px 10px red;
+
+}
+.h-big{
+    font-size: 50px;
+    font-family:  "Anta", sans-serif;
+
+}
